@@ -1,26 +1,31 @@
 import React from 'react'
-import WeatherCard from "./components/WeatherCard"
-import BulbToggle from './components/BulbToggle'
-import Calculator from './components/Calculator.jsx'
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
+import WeatherCard from './components/WeatherCard'
+import Calculator from './components/Calculator'
+import StopWatch from './components/StopWatch'
+
 const App = () => {
   return (
-<>
-{/* <WeatherCard
-data ="40" 
-pic="https://media.istockphoto.com/id/510978989/photo/hawa-mahal-palace-in-jaipur-rajasthan.jpg?s=612x612&w=0&k=20&c=-2ijZ9kpofMH1jJhaxFF1hJ5oqjdXfOtIu0BlwXwdls="
-Location={"Jaipur"}
-/>
+  <Router>
+    <div>
+      <nav>
+          <ul>
+            <li>
+              
+            </li>
+            <li></li>
+            <li></li>
+          </ul>
+      </nav>
+      <Routes>
+          <Route path="/" element={<WeatherCard/>}></Route>
+          <Route path="/calculator" element={<Calculator/>}></Route>
+          <Route path="/stopwatch" element={<StopWatch/>}></Route>
 
-<WeatherCard 
-data = "30" 
-pic="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJoHP_uzR2BMYxEy6Rgr4RBgJ2m48SaChhkA&s"
-Location={"Agra"}
-/> */}
 
-{/* <BulbToggle /> */}
-
-<Calculator/>
-</>
+      </Routes>
+    </div>
+  </Router>
 
 
   )
