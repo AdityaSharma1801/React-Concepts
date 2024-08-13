@@ -1,6 +1,7 @@
 import React from 'react'
 import WeatherCard from "./components/WeatherCard"
 import BulbToggle from './components/BulbToggle'
+import Calculator from './components/Calculator.jsx'
 const App = () => {
   return (
 <>
@@ -16,7 +17,9 @@ pic="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJoHP_uzR2BMYxEy6Rgr4
 Location={"Agra"}
 /> */}
 
-<BulbToggle />
+{/* <BulbToggle /> */}
+
+<Calculator/>
 </>
 
 

@@ -10,10 +10,10 @@ const BulbToggle = () => {
     };
   return (
     <div>
-      BulbToggle
+      <h1>BulbToggle</h1>
 
     <img src={isOn ? bulbOnImg : bulbOffImg} alt="bulboff.png" />
-
+<br />
     <button onClick={toggleBulb}>Click me</button>
     </div>
   )
